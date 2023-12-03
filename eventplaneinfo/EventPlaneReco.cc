@@ -300,8 +300,6 @@ int EventPlaneReco::process_event(PHCompositeNode *topNode)
        
     }
       
-//      std::cout<<mbd_e_south<<"\t"<<mean_sin_south[1]<<"\t"<<mean_sin_south[1]<<std::endl;
-//      std::cout<<mbd_e_north<<"\t"<<mean_sin_north[1]<<"\t"<<mean_sin_north[1]<<std::endl;
 
       //get recentering histograms
       for (unsigned int order = 1; order < m_MaxOrder + 1; order++)
