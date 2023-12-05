@@ -110,10 +110,17 @@ int SimEP::process_event(PHCompositeNode *topNode)
     }
    
     auto mbds = epmap->get(EventplaneinfoMap::MBDS);
-    sep = mbds->get_psi(2);
+    sep = mbds->get_psi(2); 
    
     auto mbdn = epmap->get(EventplaneinfoMap::MBDN);
     nep = mbdn->get_psi(2);
+
+    std::pair<double, double> Qsouth;
+    Qsouth = mbds->get_qvector(2);
+
+    std::pair<double, double> Qnorth;
+    Qnorth = mbdn->get_qvector(2);
+   
   
     _g.push_back(sep);
     _g.push_back(nep);
